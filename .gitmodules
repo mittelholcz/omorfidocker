@@ -1,0 +1,3 @@
+[submodule "omorfi"]
+	path = omorfi
+	url = https://github.com/flammie/omorfi.git
