@@ -1,11 +1,11 @@
 # OmorfiDocker
 
-Dockerfile az Omorfi projekthez.
+Dockerfile az [Omorfi](https://github.com/flammie/omorfi) projekthez.
 
 
 ## Használat
 
-- `make build`: image builelése, kell a továbbiakhoz, sokáig tart
+- `make build`: image buildelése, kell a továbbiakhoz, sokáig tart
 - `make run`: elindítja az OmorfiDocker-t, ad egy promptot, ahol látjuk az
   OmorfiDocker gyökérkönyvtárát és a konténeren belül adhatjuk ki a
   parancsokat. Példa (a `data/out` fájl a `root` felhasználóé lesz!):
