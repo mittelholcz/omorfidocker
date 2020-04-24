@@ -1,5 +1,8 @@
+SHELL=/bin/bash
 all:
-	@echo 'Choose a target: build, run'
+	@[[ "$(CMD)" ]] \
+	&& docker run --name omorfi --rm -i omorfi:latest $(CMD) \
+	|| echo -n ''
 .PHONY: all
 
 
@@ -9,9 +12,5 @@ build:
 
 
 run:
-	docker run --name omorfi --rm -it omorfi:latest /bin/bash
+	docker run --name omorfi --rm -it -v $$(pwd)/:/app/ omorfi:latest /bin/bash
 .PHONY: run
-
-# TODO
-# - volume
-# - terminal okositas / szinezes
