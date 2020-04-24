@@ -1,3 +1,3 @@
 # OmorfiDocker
 
-Dockerfile for omorfi project
+Dockerfile az Omorfi projekthez.
