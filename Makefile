@@ -7,10 +7,11 @@ all:
 
 
 build:
+	mkdir -p data
 	docker build -t omorfi:latest .
 .PHONY: build
 
 
 run:
-	docker run --name omorfi --rm -it -v $$(pwd)/:/app/ omorfi:latest /bin/bash
+	docker run --name omorfi --rm -it -v $$(pwd)/data/:/app/ omorfi:latest /bin/bash
 .PHONY: run

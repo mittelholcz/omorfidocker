@@ -1,5 +1,6 @@
-nohup.out
 Dockerfile
-__pycache__/
-.git/
-.git*
+**/.git*
+**/nohup.out
+**/__pycache__/
+**/*.md
+
